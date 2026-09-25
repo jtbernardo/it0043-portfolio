@@ -1,11 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<style>
+    h1 {text-align: center;}
+    .reachout {text-align: center;}
+    aside {
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        float: center;
+        background-color: #a84c4c;
+        box-sizing: border-box;
+    }
+    .navigation {
+        background-color: #212020;
+        border: 2px solid;
+        border-color: #d6d1cf;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .color-box {
+        background-color: #e36a28;
+        border: 2px solid;
+        border-color: #9a490a;
+    }
+    form {
+        width: 70%;
+        margin: auto;
+    }
+    label {
+        display: block;
+        text-align: left;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="fname"],
+    input[type="lname"],
+    input[type="tel"],
+    input[type="phone"],
+    input[type="sub"],
+    textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 20%;
+        height: 40px;
+    }
+</style>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact HTML</title>
+    <title>Contact Information</title>
 </head>
-<body>
+
+<body bgcolor="#212020">
+
+<nav class="navigation">
+    <h8><a href="index.html"><font color="#c44b30" face="Montserrat" size="4">INDEX</font></a></h8>
+    <h8><a href="about.html"><font color="#c44b30" face="Montserrat" size="4">ABOUT</font></a></h8>
+    <h8><a href="skills.html"><font color="#c44b30" face="Montserrat" size="4">SKILLS</font></a></h8>
+    <h8><a href="contact.html"><font color="#c44b30" face="Montserrat" size="4"><strong>CONTACT</strong></font></a></h8>
+</nav>
+
+<br>
+
+<header class="color-box">
+    <h1><font color="#27473C" face="Montserrat" size="18"> CONTACT FORM </font></h1>
+</header>
+<br>
+<aside>
+    <h3 class="reachout"><font color="#d6d1cf" face="Montserrat" size="5">Beyond Plus Ultra</font></h3>
+</aside>
+
+<main>
+    <section>
+        <p class="reachout"><font color="#f5dob7" face="Montserrat" size="4">Need a Hero? Feel free to reach out.</font></p>
+    </section>
+    <form>
+            <label for="fname"><font color="#f5dob7" face="Montserrat" size="3"><strong>First Name:</strong></font></label><br>
+            <input type="text" id="fname" name="fname" required>
+
+            <br><br><br>
+
+            <label for="lname"><font color="#f5dob7" face="Montserrat" size="3"><strong>Last Name:</strong></font></label><br>
+            <input type="text" id="lname" name="lname" required>
+
+            <br><br><br>
+
+            <label for="email"><font color="#f5dob7" face="Montserrat" size="3"><strong>Email:</strong></font></label><br>
+            <input type="text" id="email" name="email" required>
+
+            <br><br><br>
+
+            <label for="phone"><font color="#f5dob7" face="Montserrat" size="3"><strong>Mobile Number:</strong></font></label><br>
+            <input type="text" id="phone" name="phone" required>
+
+            <br><br><br>
+
+            <label for="tel"><font color="#f5dob7" face="Montserrat" size="3"><strong>Telephone Number:</strong></font></label><br>
+            <input type="text" id="tel" name="tel">
+
+            <br><br><br>
+
+            <label for="sub"><font color="#f5dob7" face="Montserrat" size="3"><strong>Subject:</strong></font></label><br>
+            <input type="text" id="sub" name="sub" required>
+
+            <br><br><br>
+
+            <label for="message"><font color="#f5dob7" face="Montserrat" size="3"><strong>Message:</strong></font></label><br>
+            <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+
+            <br><br><br>
+
+            <input class="submit" type="submit" value="Submit">
+    </form>
+
+    <br><br>
+
+    <hr width="100%" size="5" color="#c44b30">
+
+    <br>
+
+    <article>
+        <h2><font color="#d6d1cf" face="Montserrat" size="5">Contact Us:</font></h2>
+        <p><font color="#d6d1cf" face="Calibri" size="3"><strong>Email:</strong> contactsuport@bakuriot.agency</font></p>
+        <p><font color="#d6d1cf" face="Calibri" size="3"><strong>Phone:</strong> 1234-5678 / 9101-1121</font></p>
+        <p><font color="#d6d1cf" face="Calibri" size="5"><strong>Emergency Hotline: 6767 </strong></font></p>
+    </article>
+</main>
+
+<br><br>
+    <hr width="100%" size="5" color="#c44b30">
+
+    <br><br>
+
+<footer>
+    <i style="margin-left: 20px;"><font color="#d6d1cf">Made by Jiniesha Dominique T. Bernardo for M2T1 in Web Design (TD22). 2026.</font></i>
+</footer>
     
 </body>
 </html>
