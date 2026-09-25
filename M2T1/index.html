@@ -4,27 +4,40 @@
 <style>
     h1 {text-align: center;}
     h3 {text-align: center;}
-    .content {text-align: left;}
-    aside {
-        width: 30%;
-        padding-left: 50px;
-        float: left;
+    .navigation {
         background-color: #212020;
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+    }
+    .content {
+        margin-left: 40%;
+        margin-right: 5%;
+    }
+    aside {
+        width: 35%;
+        padding-left: 20px;
+        float: left;
+        background-color: #27473C;
+        box-sizing: border-box;
     }
     .color-box {
         background-color: #27473C;
         border: 2px solid;
-        border-color: #212020;
+        border-color: #0d482a;
     }
     .content-box {
         background-color: #e36a28;
         border: 1.5px solid;
-        border-color: #212020
+        border-color: #212020;
     }
     .content-box2 {
         background-color: #393837;
         border: 1.5px solid;
-        border-color: #212020
+        border-color: #212020;
+    }
+    .TOC {
+        margin-left: 40%;
     }
 </style>
 
@@ -35,6 +48,15 @@
 </head>
 <body bgcolor="#eddaba">
 
+<nav class="navigation">
+    <h8><a href="index.html"><font color="#c44b30" face="Montserrat" size="4"><strong>INDEX</strong></font></a></h8>
+    <h8><a href="about.html"><font color="#c44b30" face="Montserrat" size="4">ABOUT</font></a></h8>
+    <h8><a href="skills.html"><font color="#c44b30" face="Montserrat" size="4">SKILLS</font></a></h8>
+    <h8><a href="contact.html"><font color="#c44b30" face="Montserrat" size="4">CONTACT</font></a></h8>
+</nav>
+
+<br>
+
 <header class="color-box">
     <h1><font color="#c44b30" face="Montserrat" size="18"> INDEX </font></h1>
 </header>
@@ -44,11 +66,12 @@
 <hr width="100%" size="5" color="#c44b30">
 
 <nav>
-    <br><h3><font color="#a84c4c" face="Calibri" size="5">NAVIGATION</font></h3>
-    <ul>
-        <li style="margin-left: 620px"><a href="#intro"><font color="#c44b30" face="Montserrat" size="4">BRIEF INTRODUCTION</font></a></li>
-        <li style="margin-left: 620px"><a href="#contents"><font color="#c44b30" face="Montserrat" size="4">PORTFOLIO CONTENTS</font></a></li>
-        <li style="margin-left: 620px"><a href="#note"><font color="#c44b30" face="Montserrat" size="4">AUTHOR'S NOTE</font></a></li>
+    <br><h3><font color="#a84c4c" face="Calibri" size="5">TABLE OF CONTENT</font></h3>
+    <ul class="TOC">
+        <li><a href="#index"><font color="#c44b30" face="Montserrat" size="4">INDEX</font></a></li>
+        <li><a href="#intro"><font color="#c44b30" face="Montserrat" size="4">BRIEF INTRODUCTION</font></a></li>
+        <li><a href="#contents"><font color="#c44b30" face="Montserrat" size="4">PORTFOLIO CONTENTS</font></a></li>
+        <li><a href="#note"><font color="#c44b30" face="Montserrat" size="4">AUTHOR'S NOTE</font></a></li>
     </ul>
 </nav>
 <br><br>
@@ -58,7 +81,7 @@
 <br><br>
 
 <aside>
-     <h2 style="margin-left: 3px"><font color="whitesmoke" face="Montserrat" size="7">Katsuki Bakugo</font></h2>
+     <h2 style="margin-left: 3px"><font color="#d6d1cf" face="Montserrat" size="7">Katsuki Bakugo</font></h2>
      <p style="margin-left: 3px"><font color="#d6d1cf" face="Calibri" size="6">Pro-Hero Portfolio.</font></p>
 </aside>
  
@@ -66,17 +89,19 @@
 <main>
     <section class="content">
         <div id="intro">
-            <h2 style="margin-left: 600px"><font color="#393837" face="Montserrat" size="6">Brief Introduction</font></h2>
-            <p style="margin-left: 600px"><font color="#590016" face="Calibri" size="4">This portfolio contains vital information on Katsuki Bakugo's skills, characteristics, and qualifications as a Pro-Hero in Japan. This project is a sample commission of an interactive website portfolio. Katsuki Bakugo is a fictional character from the series<i> "Boku No Hero Academia" </i>("My Hero Academia"), written by Kohei Horikoshi.</font></p>
+            <h2><font color="#393837" face="Montserrat" size="6">Brief Introduction</font></h2>
+            <p><font color="#590016" face="Calibri" size="4">This portfolio contains vital information on Katsuki Bakugo's skills, characteristics, and qualifications as a Pro-Hero in Japan. This project is a sample commission of an interactive website portfolio. Katsuki Bakugo is a fictional character from the series<i> "Boku No Hero Academia" </i>("My Hero Academia"), written by Kohei Horikoshi.</font></p>
         </div>
     </section>
 
-    <br><br><br><br>
+    <br><br><br>
 
     <section>
         <div id="contents">
             <h2 style="margin-left: 50px"><font color="#393837" face="Montserrat" size="6">PORTFOLIO CONTENTS</font></h2>
             <ul>
+                <li class="content-box2"><font color="#d6d1cf" face="Calibri" size="5"><strong>INDEX</strong></font></li>
+                <br>
                 <li class="content-box"><font color="#590016" face="Calibri" size="5"><strong>ABOUT</strong></font></li>
                 <br>
                 <li class="content-box2"><font color="#d6d1cf" face="Calibri" size="5"><strong>SKILLS</strong></font></li>
@@ -95,7 +120,7 @@
 <article>
     <div id="note">
      <h2 style="margin-left: 50px"><font color="#393837" face="Montserrat" size="6">Author's Note</font></h2>
-     <p style="margin-left: 50px"><font color="#590016" face="Calibri" size="4">This took me 4 hours on the firat try, only to end up realizing that the content I put in was <strong>ALL WRONG</strong>! #saveme #havemercy #endmysuffering #walapobangpluspointsitoforwittiness #hehe #huhu</font></p>
+     <p style="margin-left: 50px"><font color="#590016" face="Calibri" size="4">This took me 4 hours on the first try, only to end up realizing that the content I put in was <strong>ALL WRONG</strong>! #saveme #havemercy #endmysuffering #walapobangpluspointsitoforwittiness #hehe #huhu</font></p>
     </div>
 </article>
 
