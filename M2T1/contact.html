@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Information</title>
+
+    <style>
     h1 {text-align: center;}
     .reachout {text-align: center;}
     aside {
         margin-left: auto;
         margin-right: auto;
         width: 30%;
-        float: center;
         background-color: #a84c4c;
         box-sizing: border-box;
     }
@@ -35,11 +39,7 @@
     }
     input[type="text"],
     input[type="email"],
-    input[type="fname"],
-    input[type="lname"],
     input[type="tel"],
-    input[type="phone"],
-    input[type="sub"],
     textarea {
         width: 100%;
         box-sizing: border-box;
@@ -50,19 +50,15 @@
     }
 </style>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Information</title>
 </head>
 
 <body bgcolor="#212020">
 
 <nav class="navigation">
-    <h8><a href="index.html"><font color="#c44b30" face="Montserrat" size="4">INDEX</font></a></h8>
-    <h8><a href="about.html"><font color="#c44b30" face="Montserrat" size="4">ABOUT</font></a></h8>
-    <h8><a href="skills.html"><font color="#c44b30" face="Montserrat" size="4">SKILLS</font></a></h8>
-    <h8><a href="contact.html"><font color="#c44b30" face="Montserrat" size="4"><strong>CONTACT</strong></font></a></h8>
+    <a href="index.html"><font color="#c44b30" face="Montserrat" size="4">INDEX</font></a>
+    <a href="about.html"><font color="#c44b30" face="Montserrat" size="4">ABOUT</font></a>
+    <a href="skills.html"><font color="#c44b30" face="Montserrat" size="4">SKILLS</font></a>
+    <a href="contact.html"><font color="#c44b30" face="Montserrat" size="4"><strong>CONTACT</strong></font></a>
 </nav>
 
 <br>
@@ -76,43 +72,43 @@
 </aside>
 
 <main>
-    <div>
-        <section>
-         <p class="reachout"><font color="#f5dob7" face="Montserrat" size="4">Need a Hero? Feel free to reach out.</font></p>
-        </section>
-    </div>
+
+    <section>
+        <p class="reachout"><font color="#f5d0b7" face="Montserrat" size="4">Need a Hero? Feel free to reach out.</font></p>
+    </section>
+    
     <form>
-            <label for="fname"><font color="#f5dob7" face="Montserrat" size="3"><strong>First Name:</strong></font></label><br>
+            <label for="fname"><font color="#f5d0b7" face="Montserrat" size="3"><strong>First Name:</strong></font></label><br>
             <input type="text" id="fname" name="fname" required>
 
             <br><br><br>
 
-            <label for="lname"><font color="#f5dob7" face="Montserrat" size="3"><strong>Last Name:</strong></font></label><br>
+            <label for="lname"><font color="#f5d0b7" face="Montserrat" size="3"><strong>Last Name:</strong></font></label><br>
             <input type="text" id="lname" name="lname" required>
 
             <br><br><br>
 
-            <label for="email"><font color="#f5dob7" face="Montserrat" size="3"><strong>Email:</strong></font></label><br>
-            <input type="text" id="email" name="email" required>
+            <label for="email"><font color="#f5d0b7" face="Montserrat" size="3"><strong>Email:</strong></font></label><br>
+            <input type="email" id="email" name="email" required>
 
             <br><br><br>
 
-            <label for="phone"><font color="#f5dob7" face="Montserrat" size="3"><strong>Mobile Number:</strong></font></label><br>
-            <input type="text" id="phone" name="phone" required>
+            <label for="phone"><font color="#f5d0b7" face="Montserrat" size="3"><strong>Mobile Number:</strong></font></label><br>
+            <input type="tel" id="phone" name="phone" required>
 
             <br><br><br>
 
-            <label for="tel"><font color="#f5dob7" face="Montserrat" size="3"><strong>Telephone Number:</strong></font></label><br>
-            <input type="text" id="tel" name="tel">
+            <label for="tel"><font color="#f5d0b7" face="Montserrat" size="3"><strong>Telephone Number:</strong></font></label><br>
+            <input type="tel" id="tel" name="tel">
 
             <br><br><br>
 
-            <label for="sub"><font color="#f5dob7" face="Montserrat" size="3"><strong>Subject:</strong></font></label><br>
+            <label for="sub"><font color="#f5d0b7" face="Montserrat" size="3"><strong>Subject:</strong></font></label><br>
             <input type="text" id="sub" name="sub" required>
 
             <br><br><br>
 
-            <label for="message"><font color="#f5dob7" face="Montserrat" size="3"><strong>Message:</strong></font></label><br>
+            <label for="message"><font color="#f5d0b7" face="Montserrat" size="3"><strong>Message:</strong></font></label><br>
             <textarea id="message" name="message" rows="5" cols="40" required></textarea>
 
             <br><br><br>
