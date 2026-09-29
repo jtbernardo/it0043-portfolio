@@ -32,7 +32,11 @@ hr {
 }
 
 .navigation a:hover {
-    color: #d6d1cf;
+    color: #d6d1cf !important;
+}
+
+.navigation a:focus {
+    color: #d6d1cf !important;
 }
 
 .color-box {
@@ -376,6 +380,21 @@ hr {
     object-fit: cover;
 }
 
+.skills-page .card-button {
+    display: inline-block;
+    background-color: #393837;
+    color: #eddaba;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+}
+
+.skills-page .card-button:hover {
+    background-color: #e36a28;
+    color: #212020;
+}
+
 .skills-page footer {
     margin-left: 20px;
     color: #393837;
@@ -453,6 +472,13 @@ hr {
     height: 120px;
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+    background-color: #eddaba;
+    border: 2px solid #e36a28;
+    outline: none;
 }
 
 .contact-page input[type="submit"] {
