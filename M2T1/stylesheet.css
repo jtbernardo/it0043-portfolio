@@ -1,0 +1,486 @@
+body {
+    margin: 3px;
+    font-family: Calibri, sans-serif;
+}
+
+h1,
+h2,
+h3 {font-family: Montserrat, sans-serif;}
+
+hr {
+    width: 100%;
+    height: 5px;
+    border: none;
+    background-color: #c44b30;
+}
+
+
+
+.navigation {
+    background-color: #212020;
+    border: 2px solid #d6d1cf;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 5px;
+}
+
+.navigation a {
+    color: #c44b30;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+}
+
+.navigation a:hover {
+    color: #d6d1cf;
+}
+
+.color-box {
+    border: 2px solid;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+.index-page {
+    background-color: #d6d1cf;
+}
+
+.index-page .color-box {
+    background-color: #27473C;
+    border: 2px solid #0d482a;
+    padding: 5px;
+}
+
+.index-page .color-box h1 {
+    color: #c44b30;
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.index-page aside {
+    width: 35%;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+    background-color: #27473C;
+    box-sizing: border-box;
+}
+
+.index-page aside h2 {
+    color: #d6d1cf;
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    margin-left: 3px;
+}
+
+.index-page aside p {
+    color: #d6d1cf;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.index-page .content {
+    margin-left: 40%;
+    margin-right: 5%;
+}
+
+.index-page .content h2 {
+    color: #393837;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+}
+
+.index-page .content p {
+    color: #590016;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.index-page #contents {
+    margin-top: 10px;
+}
+
+.index-page #contents h2 {
+    margin-left: 50px;
+    color: #393837;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+}
+
+.index-page .content-box2 {
+    background-color: #393837;
+    border: 1px solid #212020;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #e36a28;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.index-page .content-box {
+    background-color: #e36a28;
+    border: 1px solid #212020;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #590016;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.index-page #note {
+    margin-top: 20px;
+}
+
+.index-page #note h2 {
+    margin-left: 50px;
+    color: #393837;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+}
+
+.index-page #note p {
+    margin-left: 50px;
+    color: #590016;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.index-page .image-container {
+    text-align: center;
+}
+
+.index-page footer {
+    margin-left: 20px;
+    color: #393837;
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+
+.about-page {
+    background-color: #27473C;
+}
+
+.about-page .color-box {
+    background-color: #eddaba;
+    border: 2px solid #7c6767;
+    padding: 5px;
+}
+
+.about-page .color-box h1 {
+    color: #393837;
+    text-align: center;
+}
+
+.about-page .info {
+    width: 90%;
+    margin: auto;
+    color: #eddaba;
+    font-family: Calibri, sans-serif;
+}
+
+.about-page .info h2 {
+    color: #d6d1cf;
+    font-family: Montserrat, sans-serif;
+}
+
+.about-page .info p {
+    color: #eddaba;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+}
+
+.about-page aside {
+    width: 30%;
+    margin-right: 50px;
+    float: right;
+    padding: 20px;
+    text-align: center;
+    background-color: #212020;
+    box-sizing: border-box;
+}
+
+.about-page .profile {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.about-page .content-box {
+    width: 50%;
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    background-color: #e36a28;
+    border: 1.5px solid #b76105;
+    color: #212020;
+}
+
+.about-page .content-box2 {
+    width: 50%;
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    background-color: #212020;
+    border: 1.5px solid #121212;
+    color: #eddaba;
+}
+
+.about-page h3 {
+    color: #a84c4c;
+    font-family: Montserrat, sans-serif;
+}
+
+
+.about-page footer {
+    margin-left: 20px;
+    color: #d6d1cf;
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+.skills-page {
+    background-color: #eddaba;
+}
+
+.skills-page .color-box {
+    background-color: #393837;
+    border: 2px solid #222121;
+    padding: 5px;
+}
+
+.skills-page .color-box h1 {
+    color: #d6d1cf;
+    text-align: center;
+}
+
+.skills-page main h2 {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.skills-page article h2 {
+    color: #c44b30;
+}
+
+.skills-page .description p{
+    color: #27473c;
+    font-family: Calibri, sans-serif;
+    text-align: center;
+}
+
+.skills-page .table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #f5ead5;
+    color: #212020;
+    font-family: Calibri, sans-serif;
+}
+
+.skills-page .table th {
+    background-color: #27473c;
+    color: #eddaba;
+    padding: 15px;
+    border: 2px solid #27473c;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.skills-page .table td {
+    padding: 15px;
+    border: 2px solid #27473c;
+    color: #212020;
+    font-family: Calibri, sans-serif;
+}
+
+.skills-page .table td:first-child {
+    background-color: #c44b30;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    width: 30%;
+    font-weight: bold;
+}
+
+.skills-page .table td:hover {
+    background-color: #d6d1cf;
+    color: #e36a28;
+}
+
+.skills-page .gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.skills-page .achievement:hover {
+    background-color: #393837;;
+}
+
+.skills-page .achievement {
+    width: 30%;
+    background-color: #a84c4c;
+    color: #eddaba;
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.skills-page .achievement h3 {
+    color: #eddaba;
+    font-family: Montserrat, sans-serif;
+}
+
+.skills-page .achievement img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.skills-page footer {
+    margin-left: 20px;
+    color: #393837;
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+.contact-page {
+    background-color: #212020;
+}
+
+.contact-page .color-box {
+    background-color: #e36a28;
+    border: 2px solid #9a490a;
+    padding: 5px;
+}
+
+.contact-page .color-box h1 {
+    color: #27473c;
+    text-align: center;
+}
+
+.contact-page aside {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color: #a84c4c;
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-page aside h3 {
+    color: #eddaba;
+    font-family: Montserrat, sans-serif;
+}
+
+.contact-page .reachout {
+    text-align: center;
+    color: #eddaba;
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page form {
+    width: 70%;
+    margin: auto;
+}
+
+.contact-page label {
+    display: block;
+    text-align: left;
+    color: #eddaba;
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page input[type="tel"] {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page textarea {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page input[type="submit"] {
+    width: 20%;
+    height: 40px;
+    background-color: #e36a28;
+}
+
+.contact-page input[type="submit"]:hover {
+    background-color: #c44b30;
+    color: #eddaba;
+}
+
+.contact-page article h2 {
+    color: #d6d1cf;
+    font-family: Montserrat, sans-serif;
+    margin-left: 20px;
+}
+
+.contact-page article p {
+    color: #d6d1cf;
+    font-family: Calibri, sans-serif;
+    margin-left: 20px;
+}
+
+.contact-page footer {
+    margin-left: 20px;
+    color: #d6d1cf;
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
