@@ -1,42 +1,48 @@
+:root {
+    --dark: #212020;
+    --green: #27473C;
+    --light: #d6d1cf;
+    --cream: #eddaba;
+    --orange: #e36a28;
+    --red: #c44b30;
+    --maroon: #a84c4c;
+    --gray: #393837;
+    --deep-red: #590016;
+}
+
 body {
     margin: 3px;
     font-family: Calibri, sans-serif;
 }
 
-h1,
-h2,
-h3 {font-family: Montserrat, sans-serif;}
+h1, h2, h3 {
+    font-family: Montserrat, sans-serif;
+}
 
 hr {
     width: 100%;
     height: 5px;
     border: none;
-    background-color: #c44b30;
+    background-color: var(--red);
 }
 
-
-
 .navigation {
-    background-color: #212020;
-    border: 2px solid #d6d1cf;
+    background-color: var(--dark);
+    border: 1px solid var(--light);
     display: flex;
-    justify-content: center;
     gap: 50px;
     padding: 5px;
 }
 
 .navigation a {
-    color: #c44b30;
+    color: var(--red);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
 }
 
-.navigation a:hover {
-    color: #d6d1cf !important;
-}
-
+.navigation a:hover,
 .navigation a:focus {
-    color: #d6d1cf !important;
+    color: var(--light);
 }
 
 .color-box {
@@ -45,30 +51,23 @@ hr {
 }
 
 
-
-
-
-
-
-
+/* INDEX PAGE */
 
 .index-page {
-    background-color: #d6d1cf;
+    background-color: var(--light);
 }
 
 .index-page .color-box {
-    background-color: #27473C;
+    background-color: var(--green);
     border: 2px solid #0d482a;
     padding: 5px;
 }
 
-.index-page .color-box h1 {
-    color: #c44b30;
-    font-family: Montserrat, sans-serif;
-    text-align: center;
+.index-page h1 {
+    color: var(--red);
 }
 
-.index-page aside {
+aside {
     width: 35%;
     margin-left: 25px;
     margin-right: 25px;
@@ -76,162 +75,144 @@ hr {
     padding-left: 25px;
     padding-right: 25px;
     float: left;
-    background-color: #27473C;
+    background-color: var(--green);
     box-sizing: border-box;
 }
 
-.index-page aside h2 {
-    color: #d6d1cf;
-    font-family: Montserrat, sans-serif;
+aside h2 {
+    color: var(--light);
     font-size: 28px;
     margin-left: 3px;
 }
 
-.index-page aside p {
-    color: #d6d1cf;
-    font-family: Calibri, sans-serif;
+aside p {
+    color: var(--light);
     font-size: 18px;
     margin-left: 3px;
 }
 
-.index-page .content {
+.content {
     margin-left: 40%;
     margin-right: 5%;
 }
 
-.index-page .content h2 {
-    color: #393837;
+.content h2 {
+    color: var(--gray);
     font-family: Montserrat, sans-serif;
     font-size: 24px;
 }
 
-.index-page .content p {
-    color: #590016;
-    font-family: Calibri, sans-serif;
+.content p {
+    color: var(--deep-red);
     font-size: 16px;
     line-height: 1.4;
 }
 
-.index-page #contents {
+#contents {
     margin-top: 10px;
 }
 
-.index-page #contents h2 {
+#contents h2 {
     margin-left: 50px;
-    color: #393837;
+    color: var(--gray);
     font-family: Montserrat, sans-serif;
     font-size: 24px;
 }
 
-.index-page .content-box2 {
-    background-color: #393837;
-    border: 1px solid #212020;
+.content-box2 {
+    background-color: var(--gray);
+    border: 1px solid var(--dark);
     width: 70%;
     padding: 10px;
     box-sizing: border-box;
-    color: #e36a28;
-    font-family: Calibri, sans-serif;
+    color: var(--orange);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
-.index-page .content-box {
-    background-color: #e36a28;
-    border: 1px solid #212020;
+.content-box {
+    background-color: var(--orange);
+    border: 1px solid var(--dark);
     width: 70%;
     padding: 10px;
     box-sizing: border-box;
-    color: #590016;
-    font-family: Calibri, sans-serif;
+    color: var(--deep-red);
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
-.index-page #note {
+#note {
     margin-top: 20px;
 }
 
-.index-page #note h2 {
+#note h2 {
     margin-left: 50px;
-    color: #393837;
+    color: var(--gray);
     font-family: Montserrat, sans-serif;
     font-size: 24px;
 }
 
-.index-page #note p {
+#note p {
     margin-left: 50px;
-    color: #590016;
-    font-family: Calibri, sans-serif;
+    color: var(--deep-red);
     font-size: 16px;
     line-height: 1.4;
 }
 
-.index-page .image-container {
+.image-container {
     text-align: center;
 }
 
-.index-page footer {
+footer {
     margin-left: 20px;
-    color: #393837;
-    font-family: Calibri, sans-serif;
+    color: var(--gray);
     font-size: small;
 }
 
 
-
-
-
-
-
-
-
+/* ABOUT PAGE */
 
 .about-page {
-    background-color: #27473C;
+    background-color: var(--green);
 }
 
 .about-page .color-box {
-    background-color: #eddaba;
-    border: 2px solid #7c6767;
-    padding: 5px;
+    background-color: var(--cream);
+    border: 1px solid #7c6767;
 }
 
-.about-page .color-box h1 {
-    color: #393837;
-    text-align: center;
+.about-page h1 {
+    color: var(--gray);
 }
 
-.about-page .info {
+.info {
     width: 90%;
     margin: auto;
-    color: #eddaba;
-    font-family: Calibri, sans-serif;
+    color: var(--cream);
 }
 
-.about-page .info h2 {
-    color: #d6d1cf;
-    font-family: Montserrat, sans-serif;
+.info h2 {
+    color: var(--light);
 }
 
-.about-page .info p {
-    color: #eddaba;
-    font-family: Calibri, sans-serif;
+.info p {
+    color: var(--cream);
     font-size: 20px;
 }
 
 .about-page aside {
     width: 30%;
     margin-right: 50px;
-    float: right;
     padding: 20px;
+    float: right;
     text-align: center;
-    background-color: #212020;
+    background-color: var(--dark);
     box-sizing: border-box;
 }
 
-.about-page .profile {
+.profile {
     width: 100%;
     max-width: 350px;
     height: auto;
@@ -240,56 +221,43 @@ hr {
 .about-page .content-box {
     width: 50%;
     padding: 5px;
-    font-family: Calibri, sans-serif;
+    background-color: var(--orange);
+    border: 1px solid #b76105;
+    color: var(--deep-red);
     font-size: 18px;
-    background-color: #e36a28;
-    border: 1.5px solid #b76105;
-    color: #212020;
 }
 
 .about-page .content-box2 {
     width: 50%;
     padding: 5px;
-    font-family: Calibri, sans-serif;
+    background-color: var(--dark);
+    border: 1px solid #121212;
+    color: var(--cream);
     font-size: 18px;
-    background-color: #212020;
-    border: 1.5px solid #121212;
-    color: #eddaba;
 }
 
 .about-page h3 {
-    color: #a84c4c;
-    font-family: Montserrat, sans-serif;
+    color: var(--maroon);
 }
-
 
 .about-page footer {
-    margin-left: 20px;
-    color: #d6d1cf;
-    font-family: Calibri, sans-serif;
-    font-size: small;
+    color: var(--light);
 }
 
 
-
-
-
-
-
+/* SKILLS PAGE */
 
 .skills-page {
-    background-color: #eddaba;
+    background-color: var(--cream);
 }
 
 .skills-page .color-box {
-    background-color: #393837;
-    border: 2px solid #222121;
-    padding: 5px;
+    background-color: var(--gray);
+    border: 1px solid #222121;
 }
 
 .skills-page .color-box h1 {
-    color: #d6d1cf;
-    text-align: center;
+    color: var(--light);
 }
 
 .skills-page main h2 {
@@ -298,57 +266,56 @@ hr {
 }
 
 .skills-page article h2 {
-    color: #c44b30;
+    color: var(--red);
 }
 
-.skills-page .description p{
-    color: #27473c;
-    font-family: Calibri, sans-serif;
+.description {
+    color: var(--green);
+    font-size: 16px;
     text-align: center;
 }
 
-.skills-page .table {
+table {
     width: 80%;
     margin: 30px auto;
     border-collapse: collapse;
     background-color: #f5ead5;
-    color: #212020;
+    color: var(--dark);
     font-family: Calibri, sans-serif;
 }
 
-.skills-page .table th {
-    background-color: #27473c;
-    color: #eddaba;
+th {
+    background-color: var(--green);
+    color: var(--cream);
     padding: 15px;
-    border: 2px solid #27473c;
+    border: 2px solid var(--green);
     text-align: center;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
     font-size: 30px;
 }
 
-.skills-page .table td {
+td {
     padding: 15px;
-    border: 2px solid #27473c;
-    color: #212020;
-    font-family: Calibri, sans-serif;
+    border: 2px solid var(--green);
+    color: var(--dark);
 }
 
-.skills-page .table td:first-child {
-    background-color: #c44b30;
-    color: #fff;
+tr:first-child {
+    background-color: var(--red);
+    color: white;
     text-align: center;
     font-size: 20px;
     width: 30%;
     font-weight: bold;
 }
 
-.skills-page .table td:hover {
-    background-color: #d6d1cf;
-    color: #e36a28;
+tr:hover {
+    background-color: var(--light);
+    color: var(--orange);
 }
 
-.skills-page .gallery {
+.gallery {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -356,157 +323,133 @@ hr {
     margin: 40px auto;
 }
 
-.skills-page .achievement:hover {
-    background-color: #393837;;
-}
-
-.skills-page .achievement {
+.achievement {
     width: 30%;
-    background-color: #a84c4c;
-    color: #eddaba;
+    background-color: var(--maroon);
+    color: var(--cream);
     padding: 15px;
     text-align: center;
-    box-sizing: border-box;
+    box-sizing: border-box;;
 }
 
-.skills-page .achievement h3 {
-    color: #eddaba;
-    font-family: Montserrat, sans-serif;
+.achievement:hover {
+    background-color: var(--light);
 }
 
-.skills-page .achievement img {
+.achievement h3 {
+    color: var(--cream);
+}
+
+.achievement img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.skills-page .card-button {
+.card-button {
     display: inline-block;
-    background-color: #393837;
-    color: #eddaba;
+    background-color: var(--gray);
+    color: var(--cream);
     padding: 10px 20px;
     margin-top: 10px;
     text-decoration: none;
     font-family: Montserrat, sans-serif;
 }
 
-.skills-page .card-button:hover {
-    background-color: #e36a28;
-    color: #212020;
+.card-button:hover {
+    background-color: var(--orange);
+    color: var(--dark);
 }
 
 .skills-page footer {
-    margin-left: 20px;
-    color: #393837;
-    font-family: Calibri, sans-serif;
-    font-size: small;
+    color: var(--gray);
 }
 
 
-
-
-
-
-
-
+/* CONTACT PAGE */
 
 .contact-page {
-    background-color: #212020;
+    background-color: var(--dark);
 }
 
 .contact-page .color-box {
-    background-color: #e36a28;
-    border: 2px solid #9a490a;
-    padding: 5px;
+    background-color: var(--orange);
+    border: 1px solid #9a490a;
 }
 
-.contact-page .color-box h1 {
-    color: #27473c;
-    text-align: center;
+.contact-page h1 {
+    color: var(--green);
 }
 
 .contact-page aside {
-    margin-left: auto;
-    margin-right: auto;
     width: 30%;
-    background-color: #a84c4c;
     padding: 5px;
-    box-sizing: border-box;
+    background-color: var(--maroon);
     text-align: center;
 }
 
 .contact-page aside h3 {
-    color: #eddaba;
-    font-family: Montserrat, sans-serif;
+    color: var(--cream);
 }
 
-.contact-page .reachout {
+.reachout {
     text-align: center;
-    color: #eddaba;
-    font-family: Calibri, sans-serif;
+    color: var(--cream);
 }
 
-.contact-page form {
+form {
     width: 70%;
     margin: auto;
 }
 
-.contact-page label {
+label {
     display: block;
+    color: var(--cream);
     text-align: left;
-    color: #eddaba;
-    font-family: Calibri, sans-serif;
 }
 
-.contact-page input[type="text"],
-.contact-page input[type="email"],
-.contact-page input[type="tel"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
     width: 100%;
     height: 40px;
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
 }
 
-.contact-page textarea {
+textarea {
     width: 100%;
     height: 120px;
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
 }
 
-.contact-page input:focus,
-.contact-page textarea:focus {
-    background-color: #eddaba;
-    border: 2px solid #e36a28;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    background-color: var(--cream);
+    border: 2px solid var(--orange);
     outline: none;
 }
 
-.contact-page input[type="submit"] {
+input[type="submit"] {
     width: 20%;
     height: 40px;
-    background-color: #e36a28;
+    background-color: var(--orange);
 }
 
-.contact-page input[type="submit"]:hover {
-    background-color: #c44b30;
-    color: #eddaba;
+input[type="submit"]:hover {
+    background-color: var(--red);
+    color: var(--cream);
 }
 
-.contact-page article h2 {
-    color: #d6d1cf;
-    font-family: Montserrat, sans-serif;
-    margin-left: 20px;
-}
-
+.contact-page article h2,
 .contact-page article p {
-    color: #d6d1cf;
-    font-family: Calibri, sans-serif;
+    color: var(--light);
     margin-left: 20px;
 }
 
 .contact-page footer {
-    margin-left: 20px;
-    color: #d6d1cf;
-    font-family: Calibri, sans-serif;
-    font-size: small;
+    color: var(--light);
 }
