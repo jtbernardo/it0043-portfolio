@@ -7,17 +7,18 @@
     --red: #c44b30;
     --maroon: #a84c4c;
     --gray: #393837;
-    --deep-red: #590016;
+    --dark-red: #590016;
 }
 
 body {
     margin: 3px;
     font-family: Calibri, sans-serif;
+
 }
 
-h1, h2, h3 {
-    font-family: Montserrat, sans-serif;
-}
+h1,
+h2,
+h3 {font-family: Montserrat, sans-serif;}
 
 hr {
     width: 100%;
@@ -26,10 +27,13 @@ hr {
     background-color: var(--red);
 }
 
+
+
 .navigation {
     background-color: var(--dark);
-    border: 1px solid var(--light);
+    border: 2px solid var(--light);
     display: flex;
+    justify-content: center;
     gap: 50px;
     padding: 5px;
 }
@@ -40,7 +44,10 @@ hr {
     font-size: 16px;
 }
 
-.navigation a:hover,
+.navigation a:hover {
+    color: var(--light);
+}
+
 .navigation a:focus {
     color: var(--light);
 }
@@ -51,7 +58,12 @@ hr {
 }
 
 
-/* INDEX PAGE */
+
+
+
+
+
+
 
 .index-page {
     background-color: var(--light);
@@ -63,11 +75,13 @@ hr {
     padding: 5px;
 }
 
-.index-page h1 {
+.index-page .color-box h1 {
     color: var(--red);
+    font-family: Montserrat, sans-serif;
+    text-align: center;
 }
 
-aside {
+.index-page aside {
     width: 35%;
     margin-left: 25px;
     margin-right: 25px;
@@ -79,100 +93,117 @@ aside {
     box-sizing: border-box;
 }
 
-aside h2 {
+.index-page aside h2 {
     color: var(--light);
+    font-family: Montserrat, sans-serif;
     font-size: 28px;
     margin-left: 3px;
 }
 
-aside p {
+.index-page aside p {
     color: var(--light);
+    font-family: Calibri, sans-serif;
     font-size: 18px;
     margin-left: 3px;
 }
 
-.content {
+.index-page .content {
     margin-left: 40%;
     margin-right: 5%;
 }
 
-.content h2 {
+.index-page .content h2 {
     color: var(--gray);
     font-family: Montserrat, sans-serif;
     font-size: 24px;
+
 }
 
-.content p {
-    color: var(--deep-red);
+.index-page .content p {
+    color: var(--dark-red);
+    font-family: Calibri, sans-serif;
     font-size: 16px;
     line-height: 1.4;
+
 }
 
-#contents {
+.index-page #contents {
     margin-top: 10px;
 }
 
-#contents h2 {
+.index-page #contents h2 {
     margin-left: 50px;
     color: var(--gray);
     font-family: Montserrat, sans-serif;
     font-size: 24px;
+
 }
 
-.content-box2 {
+.index-page .content-box2 {
     background-color: var(--gray);
     border: 1px solid var(--dark);
     width: 70%;
     padding: 10px;
     box-sizing: border-box;
     color: var(--orange);
+    font-family: Calibri, sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
-.content-box {
+.index-page .content-box {
     background-color: var(--orange);
     border: 1px solid var(--dark);
     width: 70%;
     padding: 10px;
     box-sizing: border-box;
-    color: var(--deep-red);
+    color: var(--dark-red);
+    font-family: Calibri, sans-serif;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
 }
 
-#note {
+.index-page #note {
     margin-top: 20px;
 }
 
-#note h2 {
+.index-page #note h2 {
     margin-left: 50px;
     color: var(--gray);
     font-family: Montserrat, sans-serif;
     font-size: 24px;
 }
 
-#note p {
+.index-page #note p {
     margin-left: 50px;
-    color: var(--deep-red);
+    color: var(--dark-red);
+    font-family: Calibri, sans-serif;
     font-size: 16px;
     line-height: 1.4;
 }
 
-.image-container {
+.index-page .image-container {
     text-align: center;
 }
 
-footer {
+.index-page footer {
     margin-left: 20px;
     color: var(--gray);
+    font-family: Calibri, sans-serif;
     font-size: small;
+
 }
 
 
-/* ABOUT PAGE */
+
+
+
+
+
+
+
 
 .about-page {
     background-color: var(--green);
@@ -180,39 +211,45 @@ footer {
 
 .about-page .color-box {
     background-color: var(--cream);
-    border: 1px solid #7c6767;
+    border: 2px solid #7c6767;
+    padding: 5px;
+
 }
 
-.about-page h1 {
+.about-page .color-box h1 {
     color: var(--gray);
+    text-align: center;
 }
 
-.info {
+.about-page .info {
     width: 90%;
     margin: auto;
     color: var(--cream);
+    font-family: Calibri, sans-serif;
 }
 
-.info h2 {
+.about-page .info h2 {
     color: var(--light);
+    font-family: Montserrat, sans-serif;
 }
 
-.info p {
+.about-page .info p {
     color: var(--cream);
+    font-family: Calibri, sans-serif;
     font-size: 20px;
 }
 
 .about-page aside {
     width: 30%;
     margin-right: 50px;
-    padding: 20px;
     float: right;
+    padding: 20px;
     text-align: center;
     background-color: var(--dark);
     box-sizing: border-box;
 }
 
-.profile {
+.about-page .profile {
     width: 100%;
     max-width: 350px;
     height: auto;
@@ -221,31 +258,42 @@ footer {
 .about-page .content-box {
     width: 50%;
     padding: 5px;
-    background-color: var(--orange);
-    border: 1px solid #b76105;
-    color: var(--deep-red);
+    font-family: Calibri, sans-serif;
     font-size: 18px;
+    background-color: var(--orange);
+    border: 1.5px solid #b76105;
+    color: var(--dark);
 }
 
 .about-page .content-box2 {
     width: 50%;
     padding: 5px;
-    background-color: var(--dark);
-    border: 1px solid #121212;
-    color: var(--cream);
+    font-family: Calibri, sans-serif;
     font-size: 18px;
+    background-color: var(--dark);
+    border: 1.5px solid #121212;
+    color: var(--cream);
 }
 
 .about-page h3 {
     color: var(--maroon);
+    font-family: Montserrat, sans-serif;
 }
+
 
 .about-page footer {
+    margin-left: 20px;
     color: var(--light);
+    font-family: Calibri, sans-serif;
+    font-size: small;
 }
 
 
-/* SKILLS PAGE */
+
+
+
+
+
 
 .skills-page {
     background-color: var(--cream);
@@ -253,11 +301,13 @@ footer {
 
 .skills-page .color-box {
     background-color: var(--gray);
-    border: 1px solid #222121;
+    border: 2px solid #222121;
+    padding: 5px;
 }
 
 .skills-page .color-box h1 {
     color: var(--light);
+    text-align: center;
 }
 
 .skills-page main h2 {
@@ -269,13 +319,13 @@ footer {
     color: var(--red);
 }
 
-.description {
+.skills-page .description p{
     color: var(--green);
-    font-size: 16px;
+    font-family: Calibri, sans-serif;
     text-align: center;
 }
 
-table {
+.skills-page .table {
     width: 80%;
     margin: 30px auto;
     border-collapse: collapse;
@@ -284,7 +334,7 @@ table {
     font-family: Calibri, sans-serif;
 }
 
-th {
+.skills-page .table th {
     background-color: var(--green);
     color: var(--cream);
     padding: 15px;
@@ -295,27 +345,29 @@ th {
     font-size: 30px;
 }
 
-td {
+.skills-page .table td {
     padding: 15px;
     border: 2px solid var(--green);
     color: var(--dark);
+    font-family: Calibri, sans-serif;
 }
 
-tr:first-child {
+.skills-page .table td:first-child {
     background-color: var(--red);
-    color: white;
+    color: #fff;
     text-align: center;
     font-size: 20px;
     width: 30%;
     font-weight: bold;
+
 }
 
-tr:hover {
+.skills-page .table td:hover {
     background-color: var(--light);
     color: var(--orange);
 }
 
-.gallery {
+.skills-page .gallery {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -323,30 +375,31 @@ tr:hover {
     margin: 40px auto;
 }
 
-.achievement {
+.skills-page .achievement:hover {
+    background-color: var(--gray);;
+}
+
+.skills-page .achievement {
     width: 30%;
     background-color: var(--maroon);
     color: var(--cream);
     padding: 15px;
     text-align: center;
-    box-sizing: border-box;;
+    box-sizing: border-box;
 }
 
-.achievement:hover {
-    background-color: var(--light);
-}
-
-.achievement h3 {
+.skills-page .achievement h3 {
     color: var(--cream);
+    font-family: Montserrat, sans-serif;
 }
 
-.achievement img {
+.skills-page .achievement img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.card-button {
+.skills-page .card-button {
     display: inline-block;
     background-color: var(--gray);
     color: var(--cream);
@@ -356,17 +409,25 @@ tr:hover {
     font-family: Montserrat, sans-serif;
 }
 
-.card-button:hover {
+.skills-page .card-button:hover {
     background-color: var(--orange);
     color: var(--dark);
 }
 
 .skills-page footer {
+    margin-left: 20px;
     color: var(--gray);
+    font-family: Calibri, sans-serif;
+    font-size: small;
 }
 
 
-/* CONTACT PAGE */
+
+
+
+
+
+
 
 .contact-page {
     background-color: var(--dark);
@@ -374,82 +435,97 @@ tr:hover {
 
 .contact-page .color-box {
     background-color: var(--orange);
-    border: 1px solid #9a490a;
+    border: 2px solid #9a490a;
+    padding: 5px;
 }
 
-.contact-page h1 {
+.contact-page .color-box h1 {
     color: var(--green);
+    text-align: center;
 }
 
 .contact-page aside {
+    margin-left: auto;
+    margin-right: auto;
     width: 30%;
-    padding: 5px;
     background-color: var(--maroon);
+    padding: 5px;
+    box-sizing: border-box;
     text-align: center;
 }
 
 .contact-page aside h3 {
     color: var(--cream);
+    font-family: Montserrat, sans-serif;
 }
 
-.reachout {
+.contact-page .reachout {
     text-align: center;
     color: var(--cream);
+    font-family: Calibri, sans-serif;
 }
 
-form {
+.contact-page form {
     width: 70%;
     margin: auto;
 }
 
-label {
+.contact-page label {
     display: block;
-    color: var(--cream);
     text-align: left;
+    color: var(--cream);
+    font-family: Calibri, sans-serif;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page input[type="tel"] {
     width: 100%;
     height: 40px;
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
 }
 
-textarea {
+.contact-page textarea {
     width: 100%;
     height: 120px;
     box-sizing: border-box;
     font-family: Calibri, sans-serif;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-textarea:focus {
+.contact-page input:focus,
+.contact-page textarea:focus {
     background-color: var(--cream);
     border: 2px solid var(--orange);
     outline: none;
 }
 
-input[type="submit"] {
+.contact-page input[type="submit"] {
     width: 20%;
     height: 40px;
     background-color: var(--orange);
 }
 
-input[type="submit"]:hover {
+.contact-page input[type="submit"]:hover {
     background-color: var(--red);
     color: var(--cream);
 }
 
-.contact-page article h2,
+.contact-page article h2 {
+    color: var(--light);
+    font-family: Montserrat, sans-serif;
+    margin-left: 20px;
+}
+
 .contact-page article p {
     color: var(--light);
+    font-family: Calibri, sans-serif;
     margin-left: 20px;
 }
 
 .contact-page footer {
+    margin-left: 20px;
     color: var(--light);
+    font-family: Calibri, sans-serif;
+    font-size: small;
 }
