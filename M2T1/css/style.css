@@ -34,7 +34,7 @@ hr {
     border: 2px solid var(--light);
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
     padding: 5px;
 }
 
@@ -540,5 +540,31 @@ hr {
 @media (min-width: 800px) {
     .skills-page .gallery {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .navigation {
+        gap: 10px;
+    }
+
+    .index-page aside {
+        float: none;
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .index-page .content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about-page aside {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
     }
 }
