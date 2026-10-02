@@ -569,6 +569,16 @@ hr {
         width: 90%;
         margin: 0 auto;
     }
+
+    .skills-page .table th {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .skills-page .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
 }
 
 @media (prefers-reduced-motion: reduce) {
