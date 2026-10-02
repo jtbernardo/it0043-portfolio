@@ -42,6 +42,7 @@ hr {
     color: var(--red);
     font-family: Montserrat, sans-serif;
     font-size: 16px;
+    transition: color 0.5s ease;
 }
 
 .navigation a:hover {
@@ -408,6 +409,7 @@ hr {
     margin-top: 10px;
     text-decoration: none;
     font-family: Montserrat, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .skills-page .card-button:hover {
@@ -566,5 +568,14 @@ hr {
         float: none;
         width: 90%;
         margin: 0 auto;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
     }
 }
