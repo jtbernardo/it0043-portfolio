@@ -368,7 +368,8 @@ hr {
 }
 
 .skills-page .gallery {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
     gap: 30px;
     width: 90%;
@@ -380,7 +381,7 @@ hr {
 }
 
 .skills-page .achievement {
-    width: 30%;
+    width: 100%;
     background-color: var(--maroon);
     color: var(--cream);
     padding: 15px;
@@ -528,4 +529,16 @@ hr {
     color: var(--light);
     font-family: Calibri, sans-serif;
     font-size: small;
+}
+
+@media (min-width: 600px) {
+    .skills-page .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .skills-page .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
