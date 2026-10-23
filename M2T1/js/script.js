@@ -5,13 +5,13 @@ const menuButton = document.querySelector(".menu-toggle");
 if (navigation && menuButton) {
     const navLinks = navigation.querySelectorAll(".nav-links a");
 
-    // Opens or closes the mobile menu.
+    // Allows mobile users to open or close the navigation menu.
     function toggleMenu() {
         const isOpen = navigation.classList.toggle("is-open");
         menuButton.setAttribute("aria-expanded", isOpen);
     }
     
-    // Closes the menu and then updates the button.
+    // Keeps the navigation menu closed after users finish navigating.
     function closeMenu() {
         navigation.classList.remove("is-open");
         menuButton.setAttribute("aria-expanded", "false");
@@ -19,7 +19,7 @@ if (navigation && menuButton) {
 
     menuButton.addEventListener("click", toggleMenu);
 
-    // Closes the menu when a link is selected.
+    // Closes the menu when a navigation link is selected.
     navLinks.forEach(function(link) {
         link.addEventListener("click", closeMenu);
     });
@@ -31,14 +31,14 @@ if (navigation && menuButton) {
         }
     });
 
-    // Closes the menu when Escape button is pressed on the keyboard.
+    
     document.addEventListener("keydown", function(event) {
         if (event.key === "Escape") {
             closeMenu();
         }
     });
 
-    // Resets the menu when the screen returns to desktop size.
+    // Keeps the navigation layout correct when the screen is resized.
     window.addEventListener("resize", function() {
         if (window.innerWidth > 600) {
             closeMenu();
@@ -56,7 +56,7 @@ if (savedMode === "on") {
     document.body.classList.add("dark-mode");
 }
 
-// Updates the text on the dark mode buttons.
+// Keeps the button labels consistent with the current color theme.
 function updateDarkModeButtons() {
     darkModeButtons.forEach(function(button) {
         if (document.body.classList.contains("dark-mode")) {
@@ -69,7 +69,9 @@ function updateDarkModeButtons() {
 
 updateDarkModeButtons();
 
+// Lets users switch themes and save their preference.
 darkModeButtons.forEach(function(button) {
+    // Updates the theme when a user clicks the button.
     button.addEventListener("click", function() {
         document.body.classList.toggle("dark-mode");
 
@@ -107,7 +109,9 @@ if (achievementGallery) {
     const achievementCards =
         achievementGallery.querySelectorAll(".achievement");
 
+    // Matches each existing achievement card with its description data.    
     achievementCards.forEach(function(card, index) {
+        // Stores achievement descriptions separately from the page markup.
         const achievement = achievements[index];
 
         if (!achievement) return;
@@ -140,11 +144,13 @@ if (contactForm) {
         { id: "message", message: "Please enter your message." }
     ];
 
+    // Clears outdated error feedback as users correct their input.
     requiredFields.forEach(function(field) {
         const input = document.querySelector("#" + field.id);
         const error = document.querySelector("#" + field.id + "-error");
 
         if (input && error) {
+            // Updates field feedback while the user edits their answer.
             input.addEventListener("input", function() {
                 error.textContent = "";
 
@@ -155,18 +161,23 @@ if (contactForm) {
         }
     });
 
+    // Prevents invalid submissions and provides field-specific feedback.
     contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
 
         let isValid = true;
 
+        // Checks each required field before allowing the form to proceed.
         requiredFields.forEach(function(field) {
             const input = document.querySelector("#" + field.id);
             const error = document.querySelector("#" + field.id + "-error");
 
             if (!input || !error) return;
 
-            if (!input.validity.valid) {
+            const isBlank = input.value.trim() === "";
+            const isInvalid = !input.validity.valid;
+
+            if (isBlank || isInvalid) {
                 error.textContent = field.message;
                 input.setAttribute("aria-invalid", "true");
                 isValid = false;
@@ -193,11 +204,13 @@ if (contactForm) {
         alert("Thank you! Your form has been submitted successfully!");
         contactForm.reset();
 
+        // Clears the field errors after a successful form submission.
         requiredFields.forEach(function(field) {
             const error = document.querySelector("#" + field.id + "-error");
             if (error) error.textContent = "";
         });
 
+        // Removes invalid-field indicators after the form is reset.
         contactForm.querySelectorAll('[aria-invalid="true"]').forEach(function(input) {
             input.removeAttribute("aria-invalid");
         });
