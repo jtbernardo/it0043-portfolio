@@ -128,3 +128,34 @@ if (achievementGallery) {
     });
 }
 
+
+
+ // FEATURE 4: CONTACT FORM VALIDATION
+const contactForm = document.querySelector("#contact-form");
+
+if (contactForm) {
+    const email = contactForm.querySelector("#email");
+
+    // Shows an alert when the email is invalid.
+    email.addEventListener("input", function() {
+        email.setCustomValidity("");
+    });
+
+    email.addEventListener("invalid", function() {
+        if (email.validity.typeMismatch) {
+            alert("Please enter a valid email address.");
+        }
+    });
+
+    // Shows a success alert when the form is valid.
+    contactForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        alert("Thank you! Your form has been submitted successfully!");
+
+        contactForm.reset();
+    });
+}
+
+
+
