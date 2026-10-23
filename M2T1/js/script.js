@@ -23,4 +23,12 @@ if (navigation && menuButton) {
         link.addEventListener("click", closeMenu);
     });
 
+    // Closes the menu when the user clicks outside the nav.
+    document.addEventListener("click", function(event) {
+        if (!navigation.contains(event.target)) {
+            closeMenu();
+        }
+    });
+
+
 }
