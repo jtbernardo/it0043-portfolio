@@ -93,3 +93,38 @@ darkModeButtons.forEach(function(button) {
 
 
 
+
+ // FEATURE 3: DYNAMIC CONTENT
+const achievementGallery = document.querySelector(".gallery");
+
+if (achievementGallery) {
+    const achievements = [
+        {
+            title: "UA Entrance Exam",
+            description: "1st in the UA Entrance Exam (Villain Points)."
+        },
+        {
+            title: "UA Sports Festival",
+            description: "Champion of the UA Sports Festival."
+        },
+        {
+            title: "Pro-Hero Dynamight",
+            description: "Ranked No. 5 among Japan's Pro-Heroes."
+        }
+    ];
+
+    const achievementCards = achievementGallery.querySelectorAll(".achievement");
+
+    achievementCards.forEach(function(card, index) {
+        const description = document.createElement("p");
+        description.classList.add("achievement-description");
+        description.textContent = achievements[index].description;
+
+        const heading = card.querySelector("h3");
+
+        if (heading) {
+            heading.insertAdjacentElement("afterend", description);
+        }
+    });
+}
+
