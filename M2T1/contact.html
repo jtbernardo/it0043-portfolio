@@ -13,61 +13,65 @@
 
 <body class="contact-page">
 
-<nav class="navigation">
-    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
-        ☰ 
-    </button>
-    
+    <nav class="navigation">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+            ☰
+        </button>
 
-    <div class="nav-links" id="site-menu">
-        <a href="index.html">INDEX</a>
-        <a href="about.html">ABOUT</a>
-        <a href="skills.html">SKILLS</a>
-        <a href="contact.html"><strong>CONTACT</strong></a>
+
+        <div class="nav-links" id="site-menu">
+            <a href="index.html">INDEX</a>
+            <a href="about.html">ABOUT</a>
+            <a href="skills.html">SKILLS</a>
+            <a href="contact.html"><strong>CONTACT</strong></a>
+        </div>
+    </nav>
+
+    <div class="mode-container">
+        <button class="dark-mode-toggle">
+            Dark Mode
+        </button>
     </div>
-</nav>
 
- <div class="mode-container">
-    <button class="dark-mode-toggle">
-        Dark Mode
-    </button>
-    </div>
+    <br>
 
-<br>
+    <header class="color-box">
+        <h1> CONTACT FORM </h1>
+    </header>
+    <br>
+    <aside>
+        <h3 class="reachout">Beyond Plus Ultra</h3>
+    </aside>
 
-<header class="color-box">
-    <h1> CONTACT FORM </h1>
-</header>
-<br>
-<aside>
-    <h3 class="reachout">Beyond Plus Ultra</h3>
-</aside>
+    <main>
 
-<main>
+        <section>
+            <p class="reachout">Need a Hero? Feel free to reach out.</p>
+        </section>
 
-    <section>
-        <p class="reachout">Need a Hero? Feel free to reach out.</p>
-    </section>
-    
-   <form id="contact-form">
-        <p id="form-feedback" role="status" aria-live="polite"></p>
+        <form id="contact-form" novalidate>
+            <p id="form-feedback" role="status" aria-live="polite"></p>
             <label for="fname"><strong>First Name:</strong></label><br>
             <input type="text" id="fname" name="fname" required>
+            <p class="field-error" id="fname-error"></p>
 
             <br><br><br>
 
             <label for="lname"><strong>Last Name:</strong></label><br>
             <input type="text" id="lname" name="lname" required>
+            <p class="field-error" id="lname-error"></p>
 
             <br><br><br>
 
             <label for="email"><strong>Email:</strong></label><br>
             <input type="email" id="email" name="email" required>
+            <p class="field-error" id="email-error"></p>
 
             <br><br><br>
 
             <label for="phone"><strong>Mobile Number:</strong></label><br>
             <input type="tel" id="phone" name="phone" required>
+            <p class="field-error" id="phone-error"></p>
 
             <br><br><br>
 
@@ -78,41 +82,44 @@
 
             <label for="sub"><strong>Subject:</strong></label><br>
             <input type="text" id="sub" name="sub" required>
+            <p class="field-error" id="sub-error"></p>
 
             <br><br><br>
 
             <label for="message"><strong>Message:</strong></label><br>
             <textarea id="message" name="message" rows="5" cols="40" required></textarea>
+            <p class="field-error" id="message-error"></p>
 
             <br><br><br>
 
             <input class="submit" type="submit" value="Submit">
-    </form>
+        </form>
+
+        <br><br>
+
+        <hr>
+
+        <br>
+
+        <div>
+            <article>
+                <h2>Contact Us:</h2>
+                <p><strong>Email:</strong> contactsuport@bakuriot.agency</p>
+                <p><strong>Phone:</strong> 1234-5678 / 9101-1121</p>
+                <p><strong>Emergency Hotline: 6767 </strong></p>
+            </article>
+        </div>
+    </main>
+
+    <br><br>
+    <hr>
 
     <br><br>
 
-    <hr>
+    <footer>
+        <i>Made by Jiniesha Dominique T. Bernardo for M2T1 in Web Design (TD22). 2026.</i>
+    </footer>
 
-    <br>
-
-    <div>
-        <article>
-         <h2>Contact Us:</h2>
-         <p><strong>Email:</strong> contactsuport@bakuriot.agency</p>
-         <p><strong>Phone:</strong> 1234-5678 / 9101-1121</p>
-         <p><strong>Emergency Hotline: 6767 </strong></p>
-        </article>
-    </div>
-</main>
-
-<br><br>
-    <hr>
-
-    <br><br>
-
-<footer>
-    <i>Made by Jiniesha Dominique T. Bernardo for M2T1 in Web Design (TD22). 2026.</i>
-</footer>
-    
 </body>
+
 </html>

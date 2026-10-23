@@ -533,6 +533,12 @@ hr {
     font-size: small;
 }
 
+.field-error {
+    color: var(--red);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
 @media (min-width: 600px) {
     .skills-page .gallery {
         grid-template-columns: repeat(2, 1fr);
