@@ -37,4 +37,10 @@ if (navigation && menuButton) {
         }
     });
 
+    // Resets the menu when the screen returns to desktop size.
+    window.addEventListener("resize", function() {
+        if (window.innerWidth > 600) {
+            closeMenu();
+        }
+    });
 }
