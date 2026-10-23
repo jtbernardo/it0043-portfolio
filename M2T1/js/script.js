@@ -30,5 +30,11 @@ if (navigation && menuButton) {
         }
     });
 
+    // Closes the menu when Escape button is pressed on the keyboard.
+    document.addEventListener("keydown", function(event) {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
 
 }
