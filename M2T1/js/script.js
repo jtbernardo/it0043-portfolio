@@ -1,3 +1,4 @@
+// FEATURE 1: MENU NAV
 const navigation = document.querySelector(".navigation");
 const menuButton = document.querySelector(".menu-toggle");
 
@@ -44,3 +45,51 @@ if (navigation && menuButton) {
         }
     });
 }
+
+
+
+
+// FEATURE 2: DARK MODE
+// Finds all dark mode buttons.
+const darkModeButtons = document.querySelectorAll(".dark-mode-toggle");
+
+// Applies the saved color mode when the page loads.
+const savedMode = localStorage.getItem("darkMode");
+
+if (savedMode === "on") {
+    document.body.classList.add("dark-mode");
+}
+
+// Updates the button text based on the current mode.
+function updateDarkModeButtons() {
+    darkModeButtons.forEach(function(button) {
+        if (document.body.classList.contains("dark-mode")) {
+            button.textContent = "Light Mode";
+        } else {
+            button.textContent = "Dark Mode";
+        }
+    });
+}
+
+// Displays the correct button text when the page loads.
+updateDarkModeButtons();
+
+// Switches the color mode when a button is clicked.
+darkModeButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+        document.body.classList.toggle("dark-mode");
+
+        // Saves the selected mode.
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "on");
+        } else {
+            localStorage.setItem("darkMode", "off");
+        }
+
+        // Updates the button text after switching modes.
+        updateDarkModeButtons();
+    });
+});
+
+
+

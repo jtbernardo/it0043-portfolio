@@ -598,7 +598,7 @@ hr {
 
 
 
-
+/*MENU NAV*/
 
 .menu-toggle {
     display: none;
@@ -635,4 +635,275 @@ hr {
     .navigation.is-open .nav-links {
         display: flex;
     }
+}
+
+
+
+
+
+
+
+
+
+/*DARK MODE*/
+
+body.dark-mode {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Navigation and headings */
+
+body.dark-mode .navigation {
+    background-color: var(--gray);
+}
+
+body.dark-mode .navigation a {
+    color: var(--cream);
+}
+
+body.dark-mode .color-box {
+    background-color: var(--gray);
+    border-color: var(--orange);
+}
+
+body.dark-mode .color-box h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: var(--cream);
+}
+
+/* Index page */
+
+body.dark-mode.index-page .content h2,
+body.dark-mode.index-page #contents h2,
+body.dark-mode.index-page #note h2 {
+    color: var(--cream);
+}
+
+body.dark-mode.index-page .content p,
+body.dark-mode.index-page #note p {
+    color: var(--light);
+}
+
+body.dark-mode.index-page aside {
+    background-color: var(--gray);
+}
+
+body.dark-mode.index-page .content-box,
+body.dark-mode.index-page .content-box2 {
+    background-color: var(--gray);
+    color: var(--cream);
+    border-color: var(--orange);
+}
+
+body.dark-mode.index-page footer,
+body.dark-mode.skills-page footer {
+    color: var(--light);
+}
+
+/* About page */
+
+body.dark-mode.about-page .info,
+body.dark-mode.about-page .info h2,
+body.dark-mode.about-page .info p,
+body.dark-mode.about-page h3 {
+    color: var(--light);
+}
+
+body.dark-mode.about-page aside {
+    background-color: var(--gray);
+}
+
+body.dark-mode.about-page .content-box,
+body.dark-mode.about-page .content-box2 {
+    background-color: var(--gray);
+    color: var(--cream);
+    border-color: var(--orange);
+}
+
+/* Skills page */
+
+body.dark-mode.skills-page .description p {
+    color: var(--light);
+}
+
+body.dark-mode.skills-page .table {
+    background-color: var(--gray);
+    color: var(--light);
+}
+
+body.dark-mode.skills-page .table th {
+    background-color: var(--green);
+    color: var(--cream);
+}
+
+body.dark-mode.skills-page .table td {
+    background-color: var(--gray);
+    color: var(--light);
+    border-color: var(--orange);
+}
+
+body.dark-mode.skills-page .table td:first-child {
+    background-color: var(--green);
+    color: var(--cream);
+}
+
+body.dark-mode.skills-page .achievement {
+    background-color: var(--gray);
+    color: var(--light);
+    border: 1px solid var(--orange);
+}
+
+body.dark-mode.skills-page .achievement h3 {
+    color: var(--cream);
+}
+
+/* Skills Table Headers - Dark Mode */
+body.dark-mode.skills-page .table th {
+    background-color: var(--orange);
+    color: var(--dark);
+    border-color: var(--orange);
+}
+
+/* Contact page */
+
+body.dark-mode.contact-page .reachout,
+body.dark-mode.contact-page label,
+body.dark-mode.contact-page article h2,
+body.dark-mode.contact-page article p,
+body.dark-mode.contact-page footer {
+    color: var(--light);
+}
+
+body.dark-mode.contact-page aside {
+    background-color: var(--gray);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: var(--gray);
+    color: var(--light);
+    border: 1px solid var(--light);
+}
+
+body.dark-mode input[type="submit"],
+body.dark-mode .dark-mode-toggle {
+    background-color: var(--green);
+    color: var(--cream);
+    border: 1px solid var(--cream);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+    background-color: var(--gray);
+    color: var(--light);
+    border: 2px solid var(--orange);
+}
+
+body.dark-mode hr {
+    background-color: var(--orange);
+}
+
+/* Dark Mode Button */
+
+.dark-mode-toggle {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--cream);
+    background-color: var(--orange);
+    color: var(--dark);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Button Position */
+.mode-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Navigation Hover - Dark Mode */
+
+body.dark-mode .navigation a:hover,
+body.dark-mode .navigation a:focus-visible {
+    color: var(--orange);
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle:hover,
+.dark-mode-toggle:focus-visible {
+    background-color: var(--red);
+    color: var(--cream);
+    outline: 2px solid var(--cream);
+    outline-offset: 2px;
+}
+
+
+/* Learn More Buttons */
+
+body.dark-mode.skills-page .card-button {
+    background-color: var(--green);
+    color: var(--cream);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode.skills-page .card-button:hover,
+body.dark-mode.skills-page .card-button:focus-visible {
+    background-color: var(--orange);
+    color: var(--dark);
+}
+
+
+/* Skills Table Hover */
+body.dark-mode.skills-page .table td {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode.skills-page .table td:hover {
+    background-color: var(--cream);
+    color: var(--orange);
+}
+
+
+/* Achievement Card Hover */
+
+body.dark-mode.skills-page .achievement {
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode.skills-page .achievement:hover {
+    background-color: var(--green);
+}
+
+/* Contact Form Input Focus - Dark Mode */
+
+body.dark-mode.contact-page input:focus,
+body.dark-mode.contact-page textarea:focus,
+body.dark-mode.contact-page select:focus {
+    background-color: var(--gray);
+    border: 2px solid var(--orange);
+    outline: 2px solid var(--cream);
+    outline-offset: 2px;
+    color: var(--cream);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* Dark Mode Button Appearance */
+
+body.dark-mode .dark-mode-toggle {
+    background-color: var(--green);
+    color: var(--cream);
+    border-color: var(--cream);
+}
+
+body.dark-mode .dark-mode-toggle:hover,
+body.dark-mode .dark-mode-toggle:focus-visible {
+    background-color: var(--orange);
+    color: var(--dark);
 }
