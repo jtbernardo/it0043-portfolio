@@ -589,3 +589,50 @@ hr {
         animation: none !important;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+.menu-toggle {
+    display: none;
+    background-color: var(--dark);
+    color: var(--light);
+    border: 1px solid var(--light);
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation.is-open .nav-links {
+        display: flex;
+    }
+}
