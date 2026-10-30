@@ -1,0 +1,915 @@
+:root {
+    --dark: #212020;
+    --green: #27473C;
+    --light: #d6d1cf;
+    --cream: #eddaba;
+    --orange: #e36a28;
+    --red: #c44b30;
+    --maroon: #a84c4c;
+    --gray: #393837;
+    --dark-red: #590016;
+}
+
+body {
+    margin: 3px;
+    font-family: Calibri, sans-serif;
+
+}
+
+h1,
+h2,
+h3 {font-family: Montserrat, sans-serif;}
+
+hr {
+    width: 100%;
+    height: 5px;
+    border: none;
+    background-color: var(--red);
+}
+
+
+
+.navigation {
+    background-color: var(--dark);
+    border: 2px solid var(--light);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 5px;
+}
+
+.navigation a {
+    color: var(--red);
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    transition: color 0.5s ease;
+}
+
+.navigation a:hover {
+    color: var(--light);
+}
+
+.navigation a:focus {
+    color: var(--light);
+}
+
+.color-box {
+    border: 2px solid;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+.index-page {
+    background-color: var(--light);
+}
+
+.index-page .color-box {
+    background-color: var(--green);
+    border: 2px solid #0d482a;
+    padding: 5px;
+}
+
+.index-page .color-box h1 {
+    color: var(--red);
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.index-page aside {
+    width: 35%;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    float: left;
+    background-color: var(--green);
+    box-sizing: border-box;
+}
+
+.index-page aside h2 {
+    color: var(--light);
+    font-family: Montserrat, sans-serif;
+    font-size: 28px;
+    margin-left: 3px;
+}
+
+.index-page aside p {
+    color: var(--light);
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    margin-left: 3px;
+}
+
+.index-page .content {
+    margin-left: 40%;
+    margin-right: 5%;
+}
+
+.index-page .content h2 {
+    color: var(--gray);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+
+}
+
+.index-page .content p {
+    color: var(--dark-red);
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+
+}
+
+.index-page #contents {
+    margin-top: 10px;
+}
+
+.index-page #contents h2 {
+    margin-left: 50px;
+    color: var(--gray);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+
+}
+
+.index-page .content-box2 {
+    background-color: var(--gray);
+    border: 1px solid var(--dark);
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--orange);
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.index-page .content-box {
+    background-color: var(--orange);
+    border: 1px solid var(--dark);
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: var(--dark-red);
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.index-page #note {
+    margin-top: 20px;
+}
+
+.index-page #note h2 {
+    margin-left: 50px;
+    color: var(--gray);
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+}
+
+.index-page #note p {
+    margin-left: 50px;
+    color: var(--dark-red);
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+.index-page .image-container {
+    text-align: center;
+}
+
+.index-page footer {
+    margin-left: 20px;
+    color: var(--gray);
+    font-family: Calibri, sans-serif;
+    font-size: small;
+
+}
+
+
+
+
+
+
+
+
+
+
+.about-page {
+    background-color: var(--green);
+}
+
+.about-page .color-box {
+    background-color: var(--cream);
+    border: 2px solid #7c6767;
+    padding: 5px;
+
+}
+
+.about-page .color-box h1 {
+    color: var(--gray);
+    text-align: center;
+}
+
+.about-page .info {
+    width: 90%;
+    margin: auto;
+    color: var(--cream);
+    font-family: Calibri, sans-serif;
+}
+
+.about-page .info h2 {
+    color: var(--light);
+    font-family: Montserrat, sans-serif;
+}
+
+.about-page .info p {
+    color: var(--cream);
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+}
+
+.about-page aside {
+    width: 30%;
+    margin-right: 50px;
+    float: right;
+    padding: 20px;
+    text-align: center;
+    background-color: var(--dark);
+    box-sizing: border-box;
+}
+
+.about-page .profile {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+}
+
+.about-page .content-box {
+    width: 50%;
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    background-color: var(--orange);
+    border: 1.5px solid #b76105;
+    color: var(--dark);
+}
+
+.about-page .content-box2 {
+    width: 50%;
+    padding: 5px;
+    font-family: Calibri, sans-serif;
+    font-size: 18px;
+    background-color: var(--dark);
+    border: 1.5px solid #121212;
+    color: var(--cream);
+}
+
+.about-page h3 {
+    color: var(--maroon);
+    font-family: Montserrat, sans-serif;
+}
+
+
+.about-page footer {
+    margin-left: 20px;
+    color: var(--light);
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+.skills-page {
+    background-color: var(--cream);
+}
+
+.skills-page .color-box {
+    background-color: var(--gray);
+    border: 2px solid #222121;
+    padding: 5px;
+}
+
+.skills-page .color-box h1 {
+    color: var(--light);
+    text-align: center;
+}
+
+.skills-page main h2 {
+    font-family: Montserrat, sans-serif;
+    text-align: center;
+}
+
+.skills-page article h2 {
+    color: var(--red);
+}
+
+.skills-page .description p{
+    color: var(--green);
+    font-family: Calibri, sans-serif;
+    text-align: center;
+}
+
+.skills-page .table {
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #f5ead5;
+    color: var(--dark);
+    font-family: Calibri, sans-serif;
+}
+
+.skills-page .table th {
+    background-color: var(--green);
+    color: var(--cream);
+    padding: 15px;
+    border: 2px solid var(--green);
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.skills-page .table td {
+    padding: 15px;
+    border: 2px solid var(--green);
+    color: var(--dark);
+    font-family: Calibri, sans-serif;
+}
+
+.skills-page .table td:first-child {
+    background-color: var(--red);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    width: 30%;
+    font-weight: bold;
+
+}
+
+.skills-page .table td:hover {
+    background-color: var(--light);
+    color: var(--orange);
+}
+
+.skills-page .gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+    margin: 40px auto;
+}
+
+.skills-page .achievement:hover {
+    background-color: var(--gray);;
+}
+
+.skills-page .achievement {
+    width: 100%;
+    background-color: var(--maroon);
+    color: var(--cream);
+    padding: 15px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.skills-page .achievement h3 {
+    color: var(--cream);
+    font-family: Montserrat, sans-serif;
+}
+
+.skills-page .achievement img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.skills-page .card-button {
+    display: inline-block;
+    background-color: var(--gray);
+    color: var(--cream);
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-family: Montserrat, sans-serif;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.skills-page .card-button:hover {
+    background-color: var(--orange);
+    color: var(--dark);
+}
+
+.skills-page footer {
+    margin-left: 20px;
+    color: var(--gray);
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
+
+
+
+
+
+
+
+
+
+.contact-page {
+    background-color: var(--dark);
+}
+
+.contact-page .color-box {
+    background-color: var(--orange);
+    border: 2px solid #9a490a;
+    padding: 5px;
+}
+
+.contact-page .color-box h1 {
+    color: var(--green);
+    text-align: center;
+}
+
+.contact-page aside {
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    background-color: var(--maroon);
+    padding: 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-page aside h3 {
+    color: var(--cream);
+    font-family: Montserrat, sans-serif;
+}
+
+.contact-page .reachout {
+    text-align: center;
+    color: var(--cream);
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page form {
+    width: 70%;
+    margin: auto;
+}
+
+.contact-page label {
+    display: block;
+    text-align: left;
+    color: var(--cream);
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page input[type="text"],
+.contact-page input[type="email"],
+.contact-page input[type="tel"] {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page textarea {
+    width: 100%;
+    height: 120px;
+    box-sizing: border-box;
+    font-family: Calibri, sans-serif;
+}
+
+.contact-page input:focus,
+.contact-page textarea:focus {
+    background-color: var(--cream);
+    border: 2px solid var(--orange);
+    outline: none;
+}
+
+.contact-page input[type="submit"] {
+    width: 20%;
+    height: 40px;
+    background-color: var(--orange);
+}
+
+.contact-page input[type="submit"]:hover {
+    background-color: var(--red);
+    color: var(--cream);
+}
+
+.contact-page article h2 {
+    color: var(--light);
+    font-family: Montserrat, sans-serif;
+    margin-left: 20px;
+}
+
+.contact-page article p {
+    color: var(--light);
+    font-family: Calibri, sans-serif;
+    margin-left: 20px;
+}
+
+.contact-page footer {
+    margin-left: 20px;
+    color: var(--light);
+    font-family: Calibri, sans-serif;
+    font-size: small;
+}
+
+.field-error {
+    color: var(--red);
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+@media (min-width: 600px) {
+    .skills-page .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 800px) {
+    .skills-page .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .navigation {
+        gap: 10px;
+    }
+
+    .index-page aside {
+        float: none;
+        width: 90%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .index-page .content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about-page aside {
+        float: none;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .skills-page .table th {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .skills-page .table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*MENU NAV*/
+
+.menu-toggle {
+    display: none;
+    background-color: var(--dark);
+    color: var(--light);
+    border: 1px solid var(--light);
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navigation.is-open .nav-links {
+        display: flex;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*DARK MODE*/
+
+body.dark-mode {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Navigation and headings */
+
+body.dark-mode .navigation {
+    background-color: var(--gray);
+}
+
+body.dark-mode .navigation a {
+    color: var(--cream);
+}
+
+body.dark-mode .color-box {
+    background-color: var(--gray);
+    border-color: var(--orange);
+}
+
+body.dark-mode .color-box h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: var(--cream);
+}
+
+/* Index page */
+
+body.dark-mode.index-page .content h2,
+body.dark-mode.index-page #contents h2,
+body.dark-mode.index-page #note h2 {
+    color: var(--cream);
+}
+
+body.dark-mode.index-page .content p,
+body.dark-mode.index-page #note p {
+    color: var(--light);
+}
+
+body.dark-mode.index-page aside {
+    background-color: var(--gray);
+}
+
+body.dark-mode.index-page .content-box,
+body.dark-mode.index-page .content-box2 {
+    background-color: var(--gray);
+    color: var(--cream);
+    border-color: var(--orange);
+}
+
+body.dark-mode.index-page footer,
+body.dark-mode.skills-page footer {
+    color: var(--light);
+}
+
+/* About page */
+
+body.dark-mode.about-page .info,
+body.dark-mode.about-page .info h2,
+body.dark-mode.about-page .info p,
+body.dark-mode.about-page h3 {
+    color: var(--light);
+}
+
+body.dark-mode.about-page aside {
+    background-color: var(--gray);
+}
+
+body.dark-mode.about-page .content-box,
+body.dark-mode.about-page .content-box2 {
+    background-color: var(--gray);
+    color: var(--cream);
+    border-color: var(--orange);
+}
+
+/* Skills page */
+
+body.dark-mode.skills-page .description p {
+    color: var(--light);
+}
+
+body.dark-mode.skills-page .table {
+    background-color: var(--gray);
+    color: var(--light);
+}
+
+body.dark-mode.skills-page .table th {
+    background-color: var(--green);
+    color: var(--cream);
+}
+
+body.dark-mode.skills-page .table td {
+    background-color: var(--gray);
+    color: var(--light);
+    border-color: var(--orange);
+}
+
+body.dark-mode.skills-page .table td:first-child {
+    background-color: var(--green);
+    color: var(--cream);
+}
+
+body.dark-mode.skills-page .achievement {
+    background-color: var(--gray);
+    color: var(--light);
+    border: 1px solid var(--orange);
+}
+
+body.dark-mode.skills-page .achievement h3 {
+    color: var(--cream);
+}
+
+/* Skills Table Headers - Dark Mode */
+body.dark-mode.skills-page .table th {
+    background-color: var(--orange);
+    color: var(--dark);
+    border-color: var(--orange);
+}
+
+/* Contact page */
+
+body.dark-mode.contact-page .reachout,
+body.dark-mode.contact-page label,
+body.dark-mode.contact-page article h2,
+body.dark-mode.contact-page article p,
+body.dark-mode.contact-page footer {
+    color: var(--light);
+}
+
+body.dark-mode.contact-page aside {
+    background-color: var(--gray);
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+    background-color: var(--gray);
+    color: var(--light);
+    border: 1px solid var(--light);
+}
+
+body.dark-mode input[type="submit"],
+body.dark-mode .dark-mode-toggle {
+    background-color: var(--green);
+    color: var(--cream);
+    border: 1px solid var(--cream);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus {
+    background-color: var(--gray);
+    color: var(--light);
+    border: 2px solid var(--orange);
+}
+
+body.dark-mode hr {
+    background-color: var(--orange);
+}
+
+/* Dark Mode Button */
+
+.dark-mode-toggle {
+    font-family: Montserrat, sans-serif;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--cream);
+    background-color: var(--orange);
+    color: var(--dark);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Button Position */
+.mode-container {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Navigation Hover - Dark Mode */
+
+body.dark-mode .navigation a:hover,
+body.dark-mode .navigation a:focus-visible {
+    color: var(--orange);
+    transition: color 0.3s ease;
+}
+
+.dark-mode-toggle:hover,
+.dark-mode-toggle:focus-visible {
+    background-color: var(--red);
+    color: var(--cream);
+    outline: 2px solid var(--cream);
+    outline-offset: 2px;
+}
+
+
+/* Learn More Buttons */
+
+body.dark-mode.skills-page .card-button {
+    background-color: var(--green);
+    color: var(--cream);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode.skills-page .card-button:hover,
+body.dark-mode.skills-page .card-button:focus-visible {
+    background-color: var(--orange);
+    color: var(--dark);
+}
+
+
+/* Skills Table Hover */
+body.dark-mode.skills-page .table td {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode.skills-page .table td:hover {
+    background-color: var(--cream);
+    color: var(--orange);
+}
+
+
+/* Achievement Card Hover */
+
+body.dark-mode.skills-page .achievement {
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode.skills-page .achievement:hover {
+    background-color: var(--green);
+}
+
+/* Contact Form Input Focus - Dark Mode */
+
+body.dark-mode.contact-page input:focus,
+body.dark-mode.contact-page textarea:focus,
+body.dark-mode.contact-page select:focus {
+    background-color: var(--gray);
+    border: 2px solid var(--orange);
+    outline: 2px solid var(--cream);
+    outline-offset: 2px;
+    color: var(--cream);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+/* Dark Mode Button Appearance */
+
+body.dark-mode .dark-mode-toggle {
+    background-color: var(--green);
+    color: var(--cream);
+    border-color: var(--cream);
+}
+
+body.dark-mode .dark-mode-toggle:hover,
+body.dark-mode .dark-mode-toggle:focus-visible {
+    background-color: var(--orange);
+    color: var(--dark);
+}
