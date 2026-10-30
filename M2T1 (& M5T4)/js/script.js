@@ -1,3 +1,4 @@
+
 const SETTINGS_KEY = "portfolioSettings";
 
 let settings = {
@@ -9,21 +10,48 @@ let settings = {
 try {
     const savedSettings = JSON.parse(localStorage.getItem(SETTINGS_KEY));
 
-    if (savedSettings && typeof savedSettings === "object") {
-        settings = { ...settings, ...savedSettings };
-    }
-} catch (error) {
-    console.log("Saved settings are corrupted. Using defaults.");
-}
+    if (savedSettings && typeof savedSettings === "object" && !Array.isArray(savedSettings)) {
+        if (savedSettings.theme === "light" || savedSettings.theme === "dark") {
+            settings.theme = savedSettings.theme;
+        }
 
-if (!settings.visitorName) {
-    const name = prompt("Welcome! What should we call you?");
-    settings.visitorName = name?.trim() || "Guest";
+        if (typeof savedSettings.visitorName === "string") {
+            settings.visitorName = savedSettings.visitorName;
+        }
+
+        if (
+            savedSettings.lastVisit === null ||
+            (typeof savedSettings.lastVisit === "string" &&
+                !isNaN(Date.parse(savedSettings.lastVisit)))
+        ) {
+            settings.lastVisit = savedSettings.lastVisit;
+        }
+    }
+
+} catch (error) {
+    console.log("Your theme preference could not be saved. It may not be remembered.");
 }
 
 settings.lastVisit = new Date().toISOString();
-localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 
+// Saves the settings safely in case Local Storage is unavailable.
+try {
+    localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+} catch (error) {
+    console.log("Your portfolio settings could not be saved. Your preferences may not be remembered.");
+}
+
+// WELCOME GREETING
+if (!settings.visitorName) {
+    const name = prompt("Welcome! What should we call you?");
+    settings.visitorName = name?.trim().slice(0, 50) || "Guest";
+
+    try {
+        localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+    } catch (error) {
+        console.log("Your visitor name could not be saved. It may not be remembered.");
+    }
+}
 
 // FEATURE 1: MENU NAV
 const navigation = document.querySelector(".navigation");
@@ -77,7 +105,6 @@ if (navigation && menuButton) {
 
 // FEATURE 2: DARK MODE
 const darkModeButtons = document.querySelectorAll(".dark-mode-toggle");
-const savedMode = localStorage.getItem("darkMode");
 
 if (settings.theme === "dark") {
     document.body.classList.add("dark-mode");
@@ -103,7 +130,12 @@ darkModeButtons.forEach(function(button) {
         document.body.classList.toggle("dark-mode");
 
         settings.theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
-        localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+
+        try {
+            localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+        } catch (error) {
+            console.log("Unable to save dark mode preference.");
+        }
 
         updateDarkModeButtons();
     });
