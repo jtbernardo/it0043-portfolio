@@ -1,5 +1,4 @@
 # ORIGINAL
-
 ## LONGEST FUNCTION IN JS
 contactForm.addEventListener("submit", function(event) {
         event.preventDefault();
