@@ -29,7 +29,7 @@ try {
     }
 
 } catch (error) {
-    console.log("Saved settings are corrupted. Using defaults.");
+    console.log("Your theme preference could not be saved. It may not be remembered.");
 }
 
 settings.lastVisit = new Date().toISOString();
@@ -38,18 +38,18 @@ settings.lastVisit = new Date().toISOString();
 try {
     localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 } catch (error) {
-    console.log("Unable to save portfolio settings.");
+    console.log("Your portfolio settings could not be saved. Your preferences may not be remembered.");
 }
 
 // WELCOME GREETING
 if (!settings.visitorName) {
     const name = prompt("Welcome! What should we call you?");
-    settings.visitorName = name?.trim() || "Guest";
+    settings.visitorName = name?.trim().slice(0, 50) || "Guest";
 
     try {
         localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
     } catch (error) {
-        console.log("Unable to save visitor name.");
+        console.log("Your visitor name could not be saved. It may not be remembered.");
     }
 }
 
