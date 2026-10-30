@@ -1,3 +1,30 @@
+const SETTINGS_KEY = "portfolioSettings";
+
+let settings = {
+    theme: "light",
+    visitorName: "",
+    lastVisit: null
+};
+
+try {
+    const savedSettings = JSON.parse(localStorage.getItem(SETTINGS_KEY));
+
+    if (savedSettings && typeof savedSettings === "object") {
+        settings = { ...settings, ...savedSettings };
+    }
+} catch (error) {
+    console.log("Saved settings are corrupted. Using defaults.");
+}
+
+if (!settings.visitorName) {
+    const name = prompt("Welcome! What should we call you?");
+    settings.visitorName = name?.trim() || "Guest";
+}
+
+settings.lastVisit = new Date().toISOString();
+localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
+
+
 // FEATURE 1: MENU NAV
 const navigation = document.querySelector(".navigation");
 const menuButton = document.querySelector(".menu-toggle");
@@ -52,7 +79,7 @@ if (navigation && menuButton) {
 const darkModeButtons = document.querySelectorAll(".dark-mode-toggle");
 const savedMode = localStorage.getItem("darkMode");
 
-if (savedMode === "on") {
+if (settings.theme === "dark") {
     document.body.classList.add("dark-mode");
 }
 
@@ -75,11 +102,8 @@ darkModeButtons.forEach(function(button) {
     button.addEventListener("click", function() {
         document.body.classList.toggle("dark-mode");
 
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("darkMode", "on");
-        } else {
-            localStorage.setItem("darkMode", "off");
-        }
+        settings.theme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+        localStorage.setItem(SETTINGS_KEY, JSON.stringify(settings));
 
         updateDarkModeButtons();
     });

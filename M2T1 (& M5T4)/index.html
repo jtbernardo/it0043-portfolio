@@ -12,6 +12,18 @@
 </head>
 
 <body class="index-page">
+    
+    <script>
+    try {
+        const savedSettings = JSON.parse(localStorage.getItem("portfolioSettings"));
+
+        if (savedSettings?.theme === "dark") {
+            document.body.classList.add("dark-mode");
+        }
+    } catch (error) {
+        // Use the default light theme.
+    }
+    </script>
 
     <nav class="navigation">
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
